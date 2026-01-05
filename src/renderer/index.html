@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double K Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header>
+          <h1>Notes</h1>
+          <button id="new-note">New Note</button>
+        </header>
+        <div id="note-list" class="note-list"></div>
+      </aside>
+      <main class="content">
+        <section class="editor">
+          <input id="title" placeholder="Title" />
+          <textarea id="body" placeholder="Start typing your note..."></textarea>
+          <div class="actions">
+            <button id="save-note">Save</button>
+            <span id="status" class="status"></span>
+          </div>
+        </section>
+        <section class="chat">
+          <header>
+            <h2>ChatGPT Helper</h2>
+            <p class="hint">Provide context for better answers.</p>
+          </header>
+          <div id="chat-log" class="chat-log"></div>
+          <form id="chat-form">
+            <textarea id="chat-input" placeholder="Ask ChatGPT about your note..."></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

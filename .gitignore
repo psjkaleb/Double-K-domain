@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+/dist
+/out
+
+# Electron-builder artifacts
+*.log
+*.asar
+*.map
+/*.dmg
+/*.exe
+
